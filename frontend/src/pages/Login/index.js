@@ -1,36 +1,47 @@
-import React from 'react';
+import React from "react";
 
-import background_login from '../../assets/background-login.svg';
-import logo from '../../assets/logo.svg';
+import background_login from "../../assets/background-login.svg";
+import logo from "../../assets/logo.svg";
 
-import './styles.css';
+import {
+  Container,
+  Main,
+  Logo,
+  Form,
+  InputContainer,
+  Label,
+  Input,
+  Button,
+  Background,
+  Paragrafo,
+} from "./styles";
 
 function Login() {
   return (
-    <div className="container">
-      <main>
-        <img className="logo" src={logo} alt="logo"/>
-        <form>
-          <div className="input-container">
-            <label htmlFor="name">Nome:</label>
-            <input id="name" type="text"/>
-          </div>
+    <Container>
+      <Main>
+        <Logo src={logo} alt="logo" />
+        <Form>
+          <InputContainer>
+            <Label>Nome:</Label>
+            <Input id="name" type="text" />
+          </InputContainer>
 
-          <div className="input-container">
-            <label htmlFor="password">Senha:</label>
-            <input id="password" type="password"/>
-          </div>
-          
-          <button id="entrar">ENTRAR</button>
-          <button id="voltar">VOLTAR</button>
-        </form>
-      </main>
+          <InputContainer>
+            <Label>Senha:</Label>
+            <Input id="password" type="password" />
+          </InputContainer>
+
+          <Button id="entrar">ENTRAR</Button>
+          <Button id="voltar">VOLTAR</Button>
+        </Form>
+      </Main>
       <aside>
-        <img className="backround" src={background_login} alt="background_login"/>
+        <Background src={background_login} alt="background_login" />
       </aside>
-      <p>Copyright ©2020 All rights reserved</p>
-    </div>
-  )
+      <Paragrafo>Copyright ©2020 All rights reserved</Paragrafo>
+    </Container>
+  );
 }
 
 export default Login;
