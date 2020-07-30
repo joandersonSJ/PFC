@@ -14,6 +14,7 @@ import {
   Button,
   Background,
   Paragrafo,
+  LabelForgotPassword,
 } from "./styles";
 
 function Login() {
@@ -27,19 +28,22 @@ function Login() {
             <Input id="name" type="text" />
           </InputContainer>
 
-          <InputContainer>
+          <InputContainer id="container-password">
             <Label>Senha:</Label>
             <Input id="password" type="password" />
+            <LabelForgotPassword href="./">
+              esqueci minha senha
+            </LabelForgotPassword>
           </InputContainer>
 
           <Button id="entrar">ENTRAR</Button>
           <Button id="voltar">VOLTAR</Button>
         </Form>
+        <Paragrafo>Copyright ©2020 All rights reserved</Paragrafo>
       </Main>
       <aside>
         <Background src={background_login} alt="background_login" />
       </aside>
-      <Paragrafo>Copyright ©2020 All rights reserved</Paragrafo>
     </Container>
   );
 }
