@@ -31,11 +31,11 @@ function Login() {
 
   const handleLogin = (evento) => {
     evento.preventDefault();
-    if ((name === "" && password === "") || name === "" || password === "") {
+    if (name === "" || password === "") {
       return useNotifyWarning();
     }
 
-    if (name !== "admin" && password !== "admin") {
+    if (name !== "admin" || password !== "admin") {
       setName("");
       setPassword("");
       return useNotifyError();
