@@ -1,13 +1,33 @@
 import React from "react";
-import { Body } from "./styles";
-
+import { Container,Content,Background,DashRepo } from "./styles";
+import {AiOutlineHome} from 'react-icons/ai'
+//Testar Imagem no border-radius
+import background_login from "../../assets/background-login.svg";
 function Dashboard() {
   return (
-    <Body>
+    <Container>
+      <Content>
       <div class="dash-left">
+      <DashRepo>     
+      <a href="Test">
+      <img src={background_login} alt="Test"/>
+      <div>
+        <strong>Carlos Nascimento</strong>
+        <p>Administrador</p>
+      </div>
+     
+       
+       </a>
+      </DashRepo>
+     
+     
+      
         <nav>
           <a href="./">
-            <div class="link">Inicio</div>
+            <div class="link">
+              <AiOutlineHome size={20}/>
+                        Inicio
+            </div>
           </a>
           <a href="./">
             <div class="link">Relatorio</div>
@@ -20,7 +40,9 @@ function Dashboard() {
           </a>
         </nav>
       </div>
-    </Body>
+      </Content>
+      <Background/>
+    </Container>
   );
 }
 
