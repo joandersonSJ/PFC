@@ -69,7 +69,7 @@ border-radius: 0px 94px 0px 0px;
 //display flex põe Nome na lateral
 export const DashRepo = styled.div`
   a{
-display:block
+display:block;
 width: 100%;
 padding:24px;
 border-radius: 5px;
@@ -114,5 +114,5 @@ div{
 
 
 
-`;
+`
 export const Background = styled.div``
