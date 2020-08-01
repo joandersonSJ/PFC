@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
+  display: grid;
   height: 100%;
-  flex-direction: row;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "formulario imagem";
+
+  > aside {
+    grid-area: imagem;
+  }
 `;
 
 export const Main = styled.main`
+  grid-area: formulario;
   background-color: #f0f0f0;
-  width: 417px;
-  height: 734px;
+  /* width: 417px; */
+  /* height: 734px; */
   display: flex;
   flex-direction: column;
 `;
@@ -30,6 +37,10 @@ export const Input = styled.input`
   letter-spacing: 0.05em;
 
   color: #939393;
+
+  &:focus {
+    border: 2px solid rgba(80, 80, 80, 0.9);
+  }
 `;
 
 export const Logo = styled.img`
@@ -38,8 +49,8 @@ export const Logo = styled.img`
 `;
 
 export const Background = styled.img`
-  width: 941px;
-  height: 734px;
+  /* width: 941px;
+  height: 734px; */
 `;
 
 export const Form = styled.form`
@@ -59,6 +70,7 @@ export const Label = styled.label`
   padding-left: 10px;
   margin-bottom: 6px;
   color: #5c5c5c;
+  cursor: pointer;
 `;
 
 export const InputContainer = styled.div`

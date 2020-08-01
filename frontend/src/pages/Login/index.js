@@ -1,4 +1,11 @@
-import React from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useState } from "react";
+import {
+  useNotifySucess,
+  useNotifyWarning,
+  useNotifyError,
+} from "../../hooks/showResponse";
+import { useHistory } from "react-router-dom";
 
 import background_login from "../../assets/background-login.svg";
 import logo from "../../assets/logo.svg";
@@ -18,26 +25,61 @@ import {
 } from "./styles";
 
 function Login() {
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const history = useHistory();
+
+  const handleLogin = (evento) => {
+    evento.preventDefault();
+    if ((name === "" && password === "") || name === "" || password === "") {
+      return useNotifyWarning();
+    }
+
+    if (name !== "admin" && password !== "admin") {
+      setName("");
+      setPassword("");
+      return useNotifyError();
+    }
+    useNotifySucess();
+    setTimeout(() => {
+      return history.push("dashboard");
+    }, 3200);
+  };
+
   return (
     <Container>
       <Main>
         <Logo src={logo} alt="logo" />
         <Form>
           <InputContainer>
-            <Label>Nome:</Label>
-            <Input id="name" type="text" />
+            <Label htmlFor="name">Nome:</Label>
+            <Input
+              id="name"
+              type="text"
+              value={name}
+              onChange={(evento) => setName(evento.target.value)}
+            />
           </InputContainer>
 
           <InputContainer id="container-password">
-            <Label>Senha:</Label>
-            <Input id="password" type="password" />
+            <Label htmlFor="password">Senha:</Label>
+            <Input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(evento) => setPassword(evento.target.value)}
+            />
             <LabelForgotPassword href="./">
               esqueci minha senha
             </LabelForgotPassword>
           </InputContainer>
 
-          <Button id="entrar">ENTRAR</Button>
-          <Button id="voltar">VOLTAR</Button>
+          <Button onClick={handleLogin} id="entrar">
+            ENTRAR
+          </Button>
+          <Button onClick={() => {}} id="voltar">
+            VOLTAR
+          </Button>
         </Form>
         <Paragrafo>Copyright ©2020 All rights reserved</Paragrafo>
       </Main>
