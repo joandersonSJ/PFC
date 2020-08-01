@@ -15,9 +15,17 @@ export default function Almoxarifado() {
       <Image src={background_almoxarifado} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>Número do Pedido:</Label>
           <Input type="text" />
+          <Label>Item:</Label>
           <Input type="text" />
+          <Label>Unidade:</Label>
           <Input type="text" />
+          <Label>Data:</Label>
+          <Input type="text" />
+          <Label>Valor do Pedido R$:</Label>
+          <Input type="text" />
+          <Label>Total dos Pedido R$:</Label>
           <Input type="text" />
           </Formulario>
       </FormularioContainer>

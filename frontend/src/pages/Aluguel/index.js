@@ -15,11 +15,17 @@ export default function Aluguel() {
       <Image src={background_aluguel} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>Id Aluguel:</Label>
           <Input type="text" />
+          <Label>Unidade:</Label>
+          <Input type="text" />          
+          <Label>Data:</Label>
           <Input type="text" />
+          <Label>Valor R$:</Label>
           <Input type="text" />
+          <Label>Total Pago:</Label>
           <Input type="text" />
-          </Formulario>
+        </Formulario>
       </FormularioContainer>
     </Container>
   );

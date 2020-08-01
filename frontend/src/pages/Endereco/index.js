@@ -15,22 +15,22 @@ export default function Endereco() {
       <Image src={background_endereco} alt="background" />
       <FormularioContainer>
         <Formulario>
-          <Input type="text" /> 
-          Id_endereco int (5),
-           Endereço varchar(100) NOT NULL,
-           Complemento varchar (10) not null,
-           Logradouro varchar (10) not null,
-           CEP int (8) not null,
-           Número int (5) not null,
-           Bairro varchar (100) not null,
-           Cidade varchar (100) not null,
-           Estado varchar (100) not null,
+          
+          <Label>Id_endereco:</Label>
           <Input type="text" />
+          <Label>CEP:</Label>           
           <Input type="text" />
+          <Label>Logradouro:</Label>
           <Input type="text" />
+          <Label>Número:</Label>
           <Input type="text" />
+          <Label>Complemento:</Label>
           <Input type="text" />
+          <Label>Bairro :</Label>
           <Input type="text" />
+          <Label>Cidade:</Label>
+          <Input type="text" />
+          <Label>Estado:</Label>
           <Input type="text" />          
         </Formulario>
       </FormularioContainer>

@@ -15,9 +15,15 @@ export default function Energia() {
       <Image src={background_energia} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>Número Contrato:</Label>
           <Input type="text" />
+          <Label>Unidade:</Label>
           <Input type="text" />
+          <Label>Mês:</Label>
           <Input type="text" />
+          <Label>Valor R$:</Label>
+          <Input type="text" />
+          <Label> Total Pago R$:</Label>
           <Input type="text" />
           </Formulario>
       </FormularioContainer>

@@ -15,24 +15,16 @@ export default function Convenio() {
       <Image src={background_convenio} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>Id Convênio:</Label>
           <Input type="text" />
+          <Label>Unidade:</Label>
           <Input type="text" />
+          <Label>Tipo Convênio:</Label>
           <Input type="text" />
+          <Label>Custo R$:</Label>
           <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
-          <Input type="text" />
+          <Label>Data da assinatura:</Label>
+          <Input type="text" />                
         </Formulario>
       </FormularioContainer>
     </Container>

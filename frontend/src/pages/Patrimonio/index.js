@@ -15,12 +15,22 @@ export default function Patrimonio() {
       <Image src={background_patrimonio} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>ID_Patrimonio:</Label>
           <Input type="text" />
+          <Label>Unidade:</Label>
           <Input type="text" />
+          <Label>Nome do Item:</Label>
           <Input type="text" />
+          <Label>Tombo:</Label>
           <Input type="text" />
-          <input type="text" />
-          <input type ="text" />
+          <Label>Condição do Item:</Label>
+          <Input type="text" />
+          <Label>Valor do Item R$:</Label>
+          <Input type="text" />
+          <Label> Total Geral R$:</Label>
+          <Input type="text" />  
+          <Label>Mês:</Label>
+          <Input type="text" />
           </Formulario>
       </FormularioContainer>
     </Container>

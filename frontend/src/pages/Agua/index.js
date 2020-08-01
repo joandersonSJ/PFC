@@ -15,9 +15,15 @@ export default function Agua() {
       <Image src={background_agua} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>Registro:</Label>
           <Input type="text" />
+          <Label>Unidade:</Label>
           <Input type="text" />
+          <Label>Data:</Label>
           <Input type="text" />
+          <Label>Valor R$:</Label>
+          <Input type="text" />
+          <Label>Total Pago R$:</Label>
           <Input type="text" />
           </Formulario>
       </FormularioContainer>
