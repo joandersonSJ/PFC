@@ -15,11 +15,17 @@ export default function Telefone() {
       <Image src={background_telefone} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>Número do Contrato:</Label>
           <Input type="text" />
+          <Label>Número Telefone:</Label>
           <Input type="text" />
+          <Label>Unidade:</Label>
           <Input type="text" />
+          <Label>Data:</Label>
           <Input type="text" />
+          <Label>Valor R$:</Label>
           <Input type="text" />
+          <Label> Total Pago R$:</Label>
           </Formulario>
       </FormularioContainer>
     </Container>

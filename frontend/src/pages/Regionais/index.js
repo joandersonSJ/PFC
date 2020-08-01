@@ -15,13 +15,17 @@ export default function Regionais() {
       <Image src={background_regionais} alt="background" />
       <FormularioContainer>
         <Formulario>
+          <Label>Código da Regional:</Label>
           <Input type="text" />
+          <Label>Nome:</Label>
           <Input type="text" />
+          <Label>Codigo Unidade:</Label>
           <Input type="text" />
+          <Label>Coordenador:</Label>
           <Input type="text" />
+          <Label>Data:</Label>
           <input type="text" />
-          <input type="text" />
-          </Formulario>
+        </Formulario>
       </FormularioContainer>
     </Container>
   );
