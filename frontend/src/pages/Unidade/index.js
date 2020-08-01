@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import background_unidades from "../../assets/background_unidades.svg";
-
+import { api } from "../../services/api";
 import {
   Container,
   Image,
@@ -11,26 +11,32 @@ import {
 
 export default function Cadastro() {
   const [municipios, setMunicipios] = useState([]);
+  const [municipioSelect, setMunicipioSelect] = useState("Abaíra");
 
   useEffect(() => {
     async function searchItem() {
-      const municipios = await fetch(
-        "https://servicodados.ibge.gov.br/api/v1/localidades/estados/BA/municipios"
+      const municipios = await api.get(
+        "api/v1/localidades/estados/BA/municipios"
       );
-      const municipios_in_json = await municipios.json();
-      setMunicipios(municipios_in_json);
+      console.log(municipioSelect);
+      setMunicipios(municipios.data);
     }
     searchItem();
-  }, [municipios]);
+  }, [municipioSelect]);
 
   return (
     <Container>
       <Image src={background_unidades} alt="background" />
       <FormularioContainer>
         <Formulario>
-          <select>
+          <select
+            onChange={(evento) => setMunicipioSelect(evento.target.value)}
+            value={municipioSelect}
+          >
             {municipios.map((municipio) => (
-              <option value={municipio.nome}>{municipio.nome}</option>
+              <option value={municipio.nome} key={municipio.id}>
+                {municipio.nome}
+              </option>
             ))}
           </select>
           <Input type="text" />

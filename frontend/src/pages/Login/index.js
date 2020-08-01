@@ -40,10 +40,12 @@ function Login() {
       setPassword("");
       return useNotifyError();
     }
+    // Gambiarra abaixo
     useNotifySucess();
     setTimeout(() => {
       return history.push("dashboard");
     }, 3200);
+    // Gambiarra acima
   };
 
   return (
