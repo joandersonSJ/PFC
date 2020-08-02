@@ -7,6 +7,7 @@ import {
   FormularioContainer,
   Formulario,
   Input,
+  Label,
 } from "./styles";
 
 export default function Prefeitura() {

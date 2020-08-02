@@ -7,12 +7,13 @@ import {
   FormularioContainer,
   Formulario,
   Input,
+  Label,
 } from "./styles";
 
 export default function Funcionarios() {
   return (
     <Container>
-      <Image src={background_funcionarios} alt="background" />
+      <Image src={background_funcionarios} alt="background" /> { /\* Comentário \*/ }
       <FormularioContainer>
         <Formulario>
           <Label>Id_funcionario:</Label>

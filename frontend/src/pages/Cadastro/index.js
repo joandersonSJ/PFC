@@ -7,6 +7,7 @@ import {
   FormularioContainer,
   Formulario,
   Input,
+  Label,
 } from "./styles";
 
 export default function Cadastro() {
@@ -74,7 +75,7 @@ export default function Cadastro() {
           <Input type="text" />
           <Label>Horario de Funcionamento</Label>
           <Input type="text" />
-          <Label>Tipo de Unidade</Label>  /*Pequeno Porte, Medio Porte, Grande porte*/
+          <Label>Tipo de Unidade</Label> { /*Pequeno Porte, Medio Porte, Grande porte*/}
           <Input type="text" />
           <Label>Nota Técnica </Label>
           <Input type="text" />
@@ -112,7 +113,7 @@ export default function Cadastro() {
           <Input type="text" />
           <Label>Planta Baixa</Label>
           <Input type="text" />
-          <Label>Ultimo Usuario</Label> /*LOG*/
+          <Label>Ultimo Usuario</Label> {/*LOG*/}
           <Input type="text" />
           <Label>Custoservico R$</Label>
           <Input type="text" />
@@ -120,17 +121,6 @@ export default function Cadastro() {
           <Input type="text" />
           <Label>Custo Anual da Unidade R$</Label>
           <Input type="text" />
-
- varchar(5) not null,
-int (10) not null,
- int (10) not null,
- int (10) not null,
-plantabaixa varchar (500) not null,
- varchar (20) not null,
-
-
-
-
         </Formulario>
       </FormularioContainer>
     </Container>
