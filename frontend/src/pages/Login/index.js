@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   useNotifySucess,
   useNotifyWarning,
@@ -25,6 +25,11 @@ import {
 } from "./styles";
 
 function Login() {
+  useEffect(() => {
+    localStorage.removeItem("username_sinebahia");
+    localStorage.removeItem("password_sinebahia");
+  }, []);
+
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
@@ -43,6 +48,8 @@ function Login() {
     // Gambiarra abaixo
     useNotifySucess();
     setTimeout(() => {
+      localStorage.setItem("username_sinebahia", name);
+      localStorage.setItem("password_sinebahia", password);
       return history.push("dashboard");
     }, 3200);
     // Gambiarra acima
@@ -51,7 +58,7 @@ function Login() {
   return (
     <Container>
       <Main>
-        <Logo src={logo} alt="logo"/>
+        <Logo src={logo} alt="logo" />
         <Form>
           <InputContainer>
             <Label htmlFor="name">Nome:</Label>

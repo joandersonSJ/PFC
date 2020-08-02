@@ -1,27 +1,15 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
-<<<<<<< HEAD
-  background: #F3F1F1;
+  background: #f3f1f1;
   height: 100vh;
-=======
-
-  height:100vh;
-
-
->>>>>>> 0bd7b93... :rocket:Menu esquerdo Dashboard 80% concluido
-
-`
+`;
 
 export const Content = styled.div`
+  width: 100%;
+  max-width: 700px;
 
-width:100%;
-max-width:700px;
-
-
-
-.dash-left {
+  .dash-left {
     background-color: #e3e3e3;
     height: 100%;
     width: 300px;
@@ -30,15 +18,16 @@ max-width:700px;
   }
 
   nav {
-   position: absolute;
-width: 280px;
-height: 500px;
-left: 0px;
-top: 245px;
+    position: absolute;
+    width: 280px;
+    height: 500px;
+    left: 0px;
+    top: 245px;
 
-background: #ECECEC;
-box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
-border-radius: 0px 94px 0px 0px;
+    background: #ececec;
+    box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.14),
+      0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 94px 0px 0px;
   }
 
   nav a {
@@ -46,147 +35,70 @@ border-radius: 0px 94px 0px 0px;
   }
 
   .link {
-  
     padding: 20px;
     font-family: "Roboto", sans-serif;
     font-size: 12pt;
     color: #585858;
     transition: all 0.2s linear;
-   
   }
 
-.link svg{
-   
-    margin-right:20px;
+  .link svg {
+    margin-right: 20px;
 
-    
-    align-items:center;
-    justify-content:space-between
-}
-
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .link:hover {
-    background-color: whitesmoke ;
-<<<<<<< HEAD
+    background-color: whitesmoke;
   }
-
-
-`
-//display flex põe Nome na lateral
-export const DashRepo = styled.div`
-  a{
-display:block;
-width: 100%;
-padding:24px;
-border-radius: 5px;
-text-decoration:none;
-  
-  
-
-
-
-align-items:center;
-
-}
-
-img{
-  height:90px;
-  width:90px;
-  border-radius:50%;
-  margin-top:26px;
-  display:flex;
-  margin-left:100px;
-  }
-
-  strong{
-    font-size:20px;
-    color:#262626;
-   
-  }
-
-div{
-  margin-left:61px;
-}
-  p{
-    background: #4F4F4F;
-    width: 124px;
-    height: 24px;
-    box-shadow: 0px 8px 10px rgba(79, 79, 79, 0.14), 0px 3px 14px rgba(79, 79, 79, 0.12), 0px 4px 5px rgba(79, 79, 79, 0.2);
-    border-radius: 12px;
-    color:#fff; 
-   font-size:18px;
-    margin-top:8px;
-    text-align:center;
-    margin-left:25px;
-  }
-
-`
-export const Aside= styled.div`
-
-
-`
-
-export const Main=styled.div `
-
-`
-export const Form= styled.div`
-
-`
-
-
-=======
-  }
-
-
-`
-//display flex põe Nome na lateral
-export const DashRepo = styled.div`
-  a{
-display:block
-width: 100%;
-padding:24px;
-border-radius: 5px;
-text-decoration:none;
-
-
-
-align-items:center;
-
-}
-
-img{
-  height:90px;
-  width:90px;
-  border-radius:50%;
-  margin-top:26px;
-  display:flex;
-  margin-left:100px;
-  }
-
-  strong{
-    font-size:20px;
-    color:#262626;
-   
-  }
-
-div{
-  margin-left:61px;
-}
-  p{
-    background: #4F4F4F;
-    width: 124px;
-    height: 24px;
-    box-shadow: 0px 8px 10px rgba(79, 79, 79, 0.14), 0px 3px 14px rgba(79, 79, 79, 0.12), 0px 4px 5px rgba(79, 79, 79, 0.2);
-    border-radius: 12px;
-    color:#fff; 
-   font-size:18px;
-    margin-top:8px;
-    text-align:center;
-    margin-left:25px;
-  }
-
-
-
 `;
-export const Background = styled.div``
->>>>>>> 0bd7b93... :rocket:Menu esquerdo Dashboard 80% concluido
+//display flex põe Nome na lateral
+export const DashRepo = styled.div`
+  a {
+    display: block;
+    width: 100%;
+    padding: 24px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    align-items: center;
+  }
+
+  img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-top: 26px;
+    display: flex;
+    margin-left: 100px;
+  }
+
+  strong {
+    font-size: 20px;
+    color: #262626;
+  }
+
+  div {
+    margin-left: 61px;
+  }
+  p {
+    background: #4f4f4f;
+    width: 124px;
+    height: 24px;
+    box-shadow: 0px 8px 10px rgba(79, 79, 79, 0.14),
+      0px 3px 14px rgba(79, 79, 79, 0.12), 0px 4px 5px rgba(79, 79, 79, 0.2);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 8px;
+    text-align: center;
+    margin-left: 25px;
+  }
+`;
+export const Aside = styled.div``;
+
+export const Main = styled.div``;
+export const Form = styled.div``;
+
+export const Background = styled.div``;
