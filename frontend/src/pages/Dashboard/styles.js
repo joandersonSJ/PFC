@@ -9,7 +9,7 @@ export const Container = styled.div`
  
  display:grid;
  grid-template-columns:1fr 3fr;
- gap:20px;
+ gap:10px;
 
   background: #f3f1f1;
   height: 100vh;
@@ -113,78 +113,39 @@ export const DashRepo = styled.div`
 
 export const Aside = styled.div`
 
-nav{
+.items-grid2{
   display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr  1fr;
-  gap:20px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+  gap:10px;
   margin-top:38px;
-
-
-
+ 
   
-  
-  
+}
+.items-grid li{
+  background-color: #C4C4C4;
+  width: 120px;
+height: 100px;
+border-radius: 18px;
+box-shadow: 2px 1px #585858;
+padding:32px 24px 16px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
 }
 
 a {
     
     text-decoration: none;
-    
+        
   }
 
-.link{
-  
-width: 120px;
-height: 100px;
-
-
-background: #C4C4C4;
-border-radius: 18px;
-box-shadow: 2px 1px #585858;
-display: flex;
-align-items:center;
-justify-content:center;  
-transition:400ms;
-
-
-}
-
-a .link:hover{
-  background-color:#848484;
-}
 
 
 
 
 
 `;
-export const Main = styled.div`
-
-.User{
-  width: 250px;
-height: 171px;
-background: #C4C4C4;
-border-radius: 18px;
-
-}
-.Data-link{
-  width: 190px;
-height: 50px;
-margin-top:25px;
-
-background: #C4C4C4;
-border-radius: 18px;
-box-shadow: 2px 1px #585858;
-display: flex;
-align-items:center;
-justify-content:center;  
-transition:400ms;
-
-
-
-}
-
-
-`
 
 
