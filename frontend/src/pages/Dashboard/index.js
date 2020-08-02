@@ -1,5 +1,5 @@
 import React from "react";
-import { Container,Content,Background,DashRepo,Aside } from "./styles";
+import { Container,Content,Background,DashRepo,Aside,Main,Form } from "./styles";
 import {AiOutlineHome,AiOutlineContainer,AiOutlineHistory} from 'react-icons/ai'
 import {BsBoxArrowInRight} from "react-icons/bs";
 
@@ -46,8 +46,16 @@ function Dashboard() {
         </nav>
       </div>
       </Content>
-    <Background>
-      </Background>
+    <Aside>
+      <Main>
+         <Form>
+          <a href="#">Unidades</a>
+        </Form>
+
+
+
+        </Main>
+      </Aside>
     </Container>
   );
 }

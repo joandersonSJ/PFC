@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-  
-  height:100vh;
-
-
+  background: #F3F1F1;
+  height: 100vh;
 
 `
 
@@ -75,7 +73,7 @@ padding:24px;
 border-radius: 5px;
 text-decoration:none;
   
-  }
+  
 
 
 
@@ -114,9 +112,17 @@ div{
     margin-left:25px;
   }
 
+`
+export const Aside= styled.div`
 
 
 `
-export const  = Aside styled.div`
+
+export const Main=styled.div `
 
 `
+export const Form= styled.div`
+
+`
+
+
