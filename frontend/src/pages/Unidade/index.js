@@ -57,6 +57,8 @@ export default function Cadastro() {
           <Input type="text" />
           <Input type="text" />
           <Input type="text" />
+        { /\* Comentário \*/ }
+
         </Formulario>
       </FormularioContainer>
     </Container>
