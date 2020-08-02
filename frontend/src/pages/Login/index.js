@@ -51,7 +51,7 @@ function Login() {
   return (
     <Container>
       <Main>
-        <Logo src={logo} alt="logo" />
+        <Logo src={logo} alt="logo"/>
         <Form>
           <InputContainer>
             <Label htmlFor="name">Nome:</Label>

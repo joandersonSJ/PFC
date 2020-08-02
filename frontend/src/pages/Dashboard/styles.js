@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-
+  
   height:100vh;
 
 
@@ -74,6 +74,8 @@ width: 100%;
 padding:24px;
 border-radius: 5px;
 text-decoration:none;
+  
+  }
 
 
 
@@ -115,4 +117,6 @@ div{
 
 
 `
-export const Background = styled.div``
+export const  = Aside styled.div`
+
+`
