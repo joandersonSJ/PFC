@@ -2,8 +2,15 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
+<<<<<<< HEAD
   background: #F3F1F1;
   height: 100vh;
+=======
+
+  height:100vh;
+
+
+>>>>>>> 0bd7b93... :rocket:Menu esquerdo Dashboard 80% concluido
 
 `
 
@@ -60,6 +67,7 @@ border-radius: 0px 94px 0px 0px;
 
   .link:hover {
     background-color: whitesmoke ;
+<<<<<<< HEAD
   }
 
 
@@ -126,3 +134,59 @@ export const Form= styled.div`
 `
 
 
+=======
+  }
+
+
+`
+//display flex põe Nome na lateral
+export const DashRepo = styled.div`
+  a{
+display:block
+width: 100%;
+padding:24px;
+border-radius: 5px;
+text-decoration:none;
+
+
+
+align-items:center;
+
+}
+
+img{
+  height:90px;
+  width:90px;
+  border-radius:50%;
+  margin-top:26px;
+  display:flex;
+  margin-left:100px;
+  }
+
+  strong{
+    font-size:20px;
+    color:#262626;
+   
+  }
+
+div{
+  margin-left:61px;
+}
+  p{
+    background: #4F4F4F;
+    width: 124px;
+    height: 24px;
+    box-shadow: 0px 8px 10px rgba(79, 79, 79, 0.14), 0px 3px 14px rgba(79, 79, 79, 0.12), 0px 4px 5px rgba(79, 79, 79, 0.2);
+    border-radius: 12px;
+    color:#fff; 
+   font-size:18px;
+    margin-top:8px;
+    text-align:center;
+    margin-left:25px;
+  }
+
+
+
+`;
+export const Background = styled.div``
+>>>>>>> 0bd7b93... :rocket:Menu esquerdo Dashboard 80% concluido
