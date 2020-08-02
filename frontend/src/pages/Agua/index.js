@@ -1,5 +1,5 @@
 import React from "react";
-import background_agua from "../../assets/background_agua.svg";
+import background_agua from "../../assets/background_agua.png";
 
 import {
   Container,
