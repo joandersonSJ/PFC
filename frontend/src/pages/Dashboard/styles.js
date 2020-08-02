@@ -1,9 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+ 
+ *{margin:0;
+    padding:0;
+ 
+ } 
+ 
+ display:grid;
+ grid-template-columns:1fr 3fr;
+ gap:20px;
+
   background: #f3f1f1;
   height: 100vh;
+  width:100vw;
 `;
+
+
 
 export const Content = styled.div`
   width: 100%;
@@ -19,14 +32,12 @@ export const Content = styled.div`
 
   nav {
     position: absolute;
-    width: 280px;
+    width: 285px;
     height: 500px;
     left: 0px;
     top: 245px;
 
     background: #ececec;
-    box-shadow: 0px 12px 17px rgba(0, 0, 0, 0.14),
-      0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0px 94px 0px 0px;
   }
 
@@ -41,6 +52,8 @@ export const Content = styled.div`
     color: #585858;
     transition: all 0.2s linear;
   }
+
+
 
   .link svg {
     margin-right: 20px;
@@ -82,12 +95,12 @@ export const DashRepo = styled.div`
   div {
     margin-left: 61px;
   }
+
+
   p {
     background: #4f4f4f;
     width: 124px;
     height: 24px;
-    box-shadow: 0px 8px 10px rgba(79, 79, 79, 0.14),
-      0px 3px 14px rgba(79, 79, 79, 0.12), 0px 4px 5px rgba(79, 79, 79, 0.2);
     border-radius: 12px;
     color: #fff;
     font-size: 18px;
@@ -96,9 +109,82 @@ export const DashRepo = styled.div`
     margin-left: 25px;
   }
 `;
-export const Aside = styled.div``;
 
-export const Main = styled.div``;
-export const Form = styled.div``;
 
-export const Background = styled.div``;
+export const Aside = styled.div`
+
+nav{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr  1fr;
+  gap:20px;
+  margin-top:38px;
+
+
+
+  
+  
+  
+}
+
+a {
+    
+    text-decoration: none;
+    
+  }
+
+.link{
+  
+width: 120px;
+height: 100px;
+
+
+background: #C4C4C4;
+border-radius: 18px;
+box-shadow: 2px 1px #585858;
+display: flex;
+align-items:center;
+justify-content:center;  
+transition:400ms;
+
+
+}
+
+a .link:hover{
+  background-color:#848484;
+}
+
+
+
+
+
+`;
+export const Main = styled.div`
+
+.User{
+  width: 250px;
+height: 171px;
+background: #C4C4C4;
+border-radius: 18px;
+
+}
+.Data-link{
+  width: 190px;
+height: 50px;
+margin-top:25px;
+
+background: #C4C4C4;
+border-radius: 18px;
+box-shadow: 2px 1px #585858;
+display: flex;
+align-items:center;
+justify-content:center;  
+transition:400ms;
+
+
+
+}
+
+
+`
+
+
