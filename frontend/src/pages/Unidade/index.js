@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import background_unidades from "../../assets/background_unidades.svg";
+import logo from "../../assets/logo.svg";
 import { api } from "../../services/api";
 import {
   Container,
@@ -7,6 +8,11 @@ import {
   FormularioContainer,
   Formulario,
   Input,
+  SelectMunicipios,
+  ContainerHeader,
+  Logo,
+  FooterFormulario,
+  Button,
 } from "./styles";
 
 export default function Cadastro() {
@@ -28,8 +34,9 @@ export default function Cadastro() {
     <Container>
       <Image src={background_unidades} alt="background" />
       <FormularioContainer>
-        <Formulario>
-          <select
+        <ContainerHeader>
+          <Logo src={logo} alt="logo" />
+          <SelectMunicipios
             onChange={(evento) => setMunicipioSelect(evento.target.value)}
             value={municipioSelect}
           >
@@ -38,7 +45,9 @@ export default function Cadastro() {
                 {municipio.nome}
               </option>
             ))}
-          </select>
+          </SelectMunicipios>
+        </ContainerHeader>
+        <Formulario>
           <Input type="text" />
           <Input type="text" />
           <Input type="text" />
@@ -57,9 +66,11 @@ export default function Cadastro() {
           <Input type="text" />
           <Input type="text" />
           <Input type="text" />
-        { /\* Comentário \*/ }
-
         </Formulario>
+        <FooterFormulario>
+          <Button id="excluir">EXCLUIR</Button>
+          <Button id="salvar">SALVAR</Button>
+        </FooterFormulario>
       </FormularioContainer>
     </Container>
   );
