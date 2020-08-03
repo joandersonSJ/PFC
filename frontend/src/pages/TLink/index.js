@@ -1,5 +1,7 @@
 import React from "react";
 import background_tlink from "../../assets/background_tlink.png";
+import logo from "../../assets/logo.svg";
+import MenuDropDown from "../../components/menuDropDown";
 
 import {
   Container,
@@ -8,13 +10,19 @@ import {
   Formulario,
   Input,
   Label,
+  ContainerHeader,
+  Logo,
 } from "./styles";
 
 export default function TLink() {
   return (
     <Container>
+      <MenuDropDown active="tlink" />
       <Image src={background_tlink} alt="background" />
       <FormularioContainer>
+      <ContainerHeader>
+          <Logo src={logo} alt="logo" />
+      </ContainerHeader>
         <Formulario>
           <Label>Número do Contrato:</Label>
           <Input type="text" />

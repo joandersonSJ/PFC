@@ -1,5 +1,7 @@
 import React from "react";
 import background_fardamento from "../../assets/background_fardamento.png";
+import logo from "../../assets/logo.svg";
+import MenuDropDown from "../../components/menuDropDown";
 
 import {
   Container,
@@ -8,13 +10,19 @@ import {
   Formulario,
   Input,
   Label,
+  ContainerHeader,
+  Logo,
 } from "./styles";
 
 export default function Fardamento() {
   return (
     <Container>
+      <MenuDropDown active="fardamento" />
       <Image src={background_fardamento} alt="background" />
       <FormularioContainer>
+      <ContainerHeader>
+          <Logo src={logo} alt="logo" />
+      </ContainerHeader>
         <Formulario>
           <Label>Id_Farda:</Label>  {/* chave Primaria da Tabela Farda*/}
           <Input type="text" />

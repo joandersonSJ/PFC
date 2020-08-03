@@ -1,5 +1,7 @@
 import React from "react";
 import background_almoxarifado from "../../assets/background_almoxarifado.png";
+import logo from "../../assets/logo.svg";
+import MenuDropDown from "../../components/menuDropDown";
 
 import {
   Container,
@@ -7,14 +9,20 @@ import {
   FormularioContainer,
   Formulario,
   Input,
+  Logo,
+  ContainerHeader,
   Label,
 } from "./styles";
 
 export default function Almoxarifado() {
   return (
     <Container>
+            <MenuDropDown active="almoxarifado" />
       <Image src={background_almoxarifado} alt="background" />
       <FormularioContainer>
+                <ContainerHeader>
+                     <Logo src={logo} alt="logo" />
+                </ContainerHeader>
         <Formulario>
           <Label>Número do Pedido:</Label>
           <Input type="text" />

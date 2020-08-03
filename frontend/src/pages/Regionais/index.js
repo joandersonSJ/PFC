@@ -1,5 +1,7 @@
 import React from "react";
 import background_regionais from "../../assets/background_regionais.png";
+import logo from "../../assets/logo.svg";
+import MenuDropDown from "../../components/menuDropDown";
 
 import {
   Container,
@@ -8,13 +10,19 @@ import {
   Formulario,
   Input,
   Label,
+  ContainerHeader,
+  Logo,
 } from "./styles";
 
 export default function Regionais(){
   return (
     <Container>
+      <MenuDropDown active="regional" />
       <Image src={background_regionais} alt="background" />
       <FormularioContainer>
+      <ContainerHeader>
+          <Logo src={logo} alt="logo" />
+      </ContainerHeader>
         <Formulario>
           <Label>Código da Regional:</Label>
           <Input type="text" />

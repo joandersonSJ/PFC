@@ -1,5 +1,7 @@
 import React from "react";
 import background_malote from "../../assets/background_malote.svg";
+import logo from "../../assets/logo.svg";
+import MenuDropDown from "../../components/menuDropDown";
 
 import {
   Container,
@@ -8,13 +10,19 @@ import {
   Formulario,
   Input,
   Label,
+  ContainerHeader,
+  Logo,
 } from "./styles";
 
 export default function Malote() {
   return (
     <Container>
+      <MenuDropDown active="malote" />
       <Image src={background_malote} alt="background" />
       <FormularioContainer>
+      <ContainerHeader>
+          <Logo src={logo} alt="logo" />
+      </ContainerHeader>
         <Formulario>
           <Label>Número do Contrato:</Label>
           <Input type="text" />

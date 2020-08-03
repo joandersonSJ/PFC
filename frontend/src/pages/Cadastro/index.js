@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import background_unidades from "../../assets/background_unidades.svg";
+import logo from "../../assets/logo.svg";
+import MenuDropDown from "../../components/menuDropDown";
 
 import {
   Container,
@@ -8,7 +10,9 @@ import {
   Formulario,
   Input,
   Label,
-} from "./styles";
+  ContainerHeader,
+  Logo,
+ } from "./styles";
 
 export default function Cadastro() {
   const [municipios, setMunicipios] = useState([]);
@@ -25,6 +29,7 @@ export default function Cadastro() {
 
   return (
     <Container>
+      <MenuDropDown active="unidade" />
       <Image src={background_unidades} alt="background" />
       <FormularioContainer>
         <Formulario>

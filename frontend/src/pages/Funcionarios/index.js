@@ -1,5 +1,7 @@
 import React from "react";
 import background_funcionarios from "../../assets/background_funcionarios.png";
+import logo from "../../assets/logo.svg";
+import MenuDropDown from "../../components/menuDropDown";
 
 import {
   Container,
@@ -8,13 +10,19 @@ import {
   Formulario,
   Input,
   Label,
+  ContainerHeader,
+  Logo,
 } from "./styles";
 
 export default function Funcionarios() {
   return (
     <Container>
+      <MenuDropDown active="funcionario" />
       <Image src={background_funcionarios} alt="background" /> { /\* Comentário \*/ }
       <FormularioContainer>
+      <ContainerHeader>
+          <Logo src={logo} alt="logo" />
+      </ContainerHeader>
         <Formulario>
           <Label>Id_funcionario:</Label>
           <Input type="text" />

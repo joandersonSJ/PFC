@@ -120,7 +120,8 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              
+              <Link to="convenio/cadastro">
                 <li data-id="2">
                   <FaBuilding size={20} />
                   <span>Convênios</span>
@@ -129,7 +130,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="servicos/cadastro">
                 <li data-id="3">
                   <FaHammer size={20} />
                   <span>Serviços</span>
@@ -138,7 +139,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="energia/cadastro">
                 <li data-id="4">
                   <FaBolt size={20} />
                   <span>Energia</span>
@@ -147,7 +148,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="malote/cadastro">
                 <li data-id="5">
                   <FaBriefcase size={20} />
                   <span>Malotes</span>
@@ -156,7 +157,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="almoxarifado/cadastro">
                 <li data-id="6">
                   <FaTape size={20} />
                   <span>Almoxarifado</span>
@@ -165,7 +166,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="acesso/cadstro">
                 <li data-id="7">
                   <FaUnlockAlt size={20} />
                   <span>Acesso</span>
@@ -174,7 +175,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="patrimonio/cadastro">
                 <li data-id="8">
                   <FaChair size={20} />
                   <span>Patrimônio</span>
@@ -183,7 +184,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="endereco/cadastro">
                 <li data-id="9">
                   <FaStreetView size={20} />
                   <span>Endereço</span>
@@ -192,7 +193,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="agua/cadastro">
                 <li data-id="10">
                   <FaBurn size={20} />
                   <span>Água</span>
@@ -201,7 +202,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="aluguel/cadastro">
                 <li data-id="11">
                   <BsFillHouseFill size={20} />
                   <span>Aluguel</span>
@@ -210,7 +211,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="farda/cadastro">
                 <li data-id="12">
                   <FaTshirt size={20} />
                   <span>Farda</span>
@@ -219,7 +220,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="prefeitura/cadastro">
                 <li data-id="13">
                   <FaLandmark size={20} />
                   <span>Prefeitura</span>
@@ -228,7 +229,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="telefone/cadastro">
                 <li data-id="14">
                   <FaPhoneAlt size={20} />
                   <span>Telefone</span>
@@ -237,7 +238,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="funcionario/cadastro">
                 <li data-id="15">
                   <FaAddressBook size={20} />
                   <span>Meus dados</span>
@@ -255,7 +256,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="seguranca/cadastro">
                 <li data-id="17">
                   <FaUserShield size={20} />
                   <span>Segurança</span>
@@ -264,7 +265,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="regional/cadastro">
                 <li data-id="18">
                   <BsBoxArrowInRight size={20} />
                   <span>Regional</span>
@@ -282,7 +283,7 @@ export default function Dashboard() {
             </div>
 
             <div className="items-grid">
-              <Link to="#">
+              <Link to="tlink/cadastro">
                 <li data-id="20">
                   <FaTelegramPlane size={20} />
                   <span>Link</span>
