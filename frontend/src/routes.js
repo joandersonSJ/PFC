@@ -30,25 +30,25 @@ function Routes() {
       <Switch>
         <Route path="/" exact component={Login} />
         <Route path="/agua/cadastro" component={Agua} />
-        <Route path="/almoxarifado" component={Almoxarifado} />
+        <Route path="/almoxarifado/cadastro" component={Almoxarifado} />
         <Route path="/unidade/cadastro" component={Unidade} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/aluguel" component={Aluguel} />
-        <Route path="/cadastro" component={Cadastro} />
-        <Route path="/convenio" component={Convenio} />
-        <Route path="/endereco" component={Endereco} />
-        <Route path="/energia" component={Energia} />
-        <Route path="/fardamento" component={Fardamento} />
-        <Route path="/funcionarios" component={Funcionarios} />
-        <Route path="/tlink" component={TLink} />
-        <Route path="/malote" component={Malote} />
-        <Route path="/patrimonio" component={Patrimonio} />
-        <Route path="/prefeitura" component={Prefeitura} />
-        <Route path="/regionais" component={Regionais} />
-        <Route path="/seguranca" component={Seguranca} />
-        <Route path="/servicos" component={Servicos} />
-        <Route path="/telefone" component={Telefone} />
-        <Route path="/cadastro" component={Cadastro} />         
+        <Route path="/dashboard/cadastro" component={Dashboard} />
+        <Route path="/aluguel/cadastro" component={Aluguel} />
+        <Route path="/cadastro/cadastro" component={Cadastro} />
+        <Route path="/convenio/cadastro" component={Convenio} />
+        <Route path="/endereco/cadastro" component={Endereco} />
+        <Route path="/energia/cadastro" component={Energia} />
+        <Route path="/fardamento/cadastro" component={Fardamento} />
+        <Route path="/funcionarios/cadastro" component={Funcionarios} />
+        <Route path="/tlink/cadastro" component={TLink} />
+        <Route path="/malote/cadastro" component={Malote} />
+        <Route path="/patrimonio/cadastro" component={Patrimonio} />
+        <Route path="/prefeitura/cadastro" component={Prefeitura} />
+        <Route path="/regionais/cadastro" component={Regionais} />
+        <Route path="/seguranca/cadastro" component={Seguranca} />
+        <Route path="/servicos/cadastro" component={Servicos} />
+        <Route path="/telefone/cadastro" component={Telefone} />
+        <Route path="/cadastro/cadastro" component={Cadastro} />         
       </Switch>
     </BrowserRouter>
   );

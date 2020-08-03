@@ -10,7 +10,7 @@ import {
   Label,
 } from "./styles";
 
-export default function Regionais() {
+export default function Regionais(){
   return (
     <Container>
       <Image src={background_regionais} alt="background" />
