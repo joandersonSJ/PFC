@@ -115,9 +115,9 @@ export const Aside = styled.div`
 
 .items-grid2{
   display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
-  gap:10px;
-  margin-top:38px;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  gap:15px;
+  margin-top:80px;
  
   
 }
