@@ -16,7 +16,7 @@ export const FormularioContainer = styled.div`
   right: 300px;
   border-radius: 4px;
   display: grid;
-  /* overflow: visible; */
+  /* overflow-y: scroll; */
   grid-template-columns: 1fr;
   grid-template-rows: 24vh 60vh 12vh;
   grid-template-areas:
@@ -63,9 +63,9 @@ export const Formulario = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  overflow-y: auto;
+  overflow-y: scroll;
   position: absolute;
 
   &::-webkit-scrollbar {
@@ -75,6 +75,9 @@ export const Formulario = styled.form`
 
   &::-webkit-scrollbar-thumb {
     background-color: #016fb9;
+  }
+  & > .input-group {
+    overflow: visible;
   }
 `;
 
@@ -153,4 +156,10 @@ export const Button = styled.button`
     background-color: #c95c53;
     color: #f5f5f5;
   }
+`;
+
+export const Label = styled.label`
+  font-size: 18px;
+  color: #222;
+  margin: 25px 0;
 `;

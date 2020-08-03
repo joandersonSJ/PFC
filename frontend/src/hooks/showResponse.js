@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 
-const useNotifySucess = () => {
-  toast.success("Login efetuado com sucesso !", {
+const useNotifySucess = (msg) => {
+  toast.success(msg, {
     autoClose: 3000,
   });
 };

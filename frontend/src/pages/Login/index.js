@@ -46,7 +46,7 @@ function Login() {
       return useNotifyError();
     }
     // Gambiarra abaixo
-    useNotifySucess();
+    useNotifySucess("Login efetuado com sucesso!");
     setTimeout(() => {
       localStorage.setItem("username_sinebahia", name);
       localStorage.setItem("password_sinebahia", password);
