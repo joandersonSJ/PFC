@@ -1,5 +1,5 @@
 import React from "react";
-import background_aluguel from "../../assets/background_aluguel.svg";
+import background_aluguel from "../../assets/background_aluguel.png";
 
 import {
   Container,

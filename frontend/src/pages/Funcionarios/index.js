@@ -1,5 +1,5 @@
 import React from "react";
-import background_funcionarios from "../../assets/background_funcionarios.svg";
+import background_funcionarios from "../../assets/background_funcionarios.png";
 
 import {
   Container,

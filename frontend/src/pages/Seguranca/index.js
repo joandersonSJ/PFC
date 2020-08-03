@@ -1,5 +1,5 @@
 import React from "react";
-import background_seguranca from "../../assets/background_seguranca.svg";
+import background_seguranca from "../../assets/background_seguranca.png";
 
 import {
   Container,

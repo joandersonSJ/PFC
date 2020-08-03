@@ -1,5 +1,5 @@
 import React from "react";
-import background_telefone from "../../assets/background_telefone.svg";
+import background_telefone from "../../assets/background_telefone.png";
 
 import {
   Container,

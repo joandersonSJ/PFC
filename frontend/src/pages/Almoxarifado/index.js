@@ -1,5 +1,5 @@
 import React from "react";
-import background_almoxarifado from "../../assets/background_almoxarifado.svg";
+import background_almoxarifado from "../../assets/background_almoxarifado.png";
 
 import {
   Container,

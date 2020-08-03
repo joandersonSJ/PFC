@@ -1,5 +1,5 @@
 import React from "react";
-import background_fardamento from "../../assets/background_fardamento.svg";
+import background_fardamento from "../../assets/background_fardamento.png";
 
 import {
   Container,

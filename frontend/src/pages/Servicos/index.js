@@ -1,5 +1,5 @@
 import React from "react";
-import background_servicos from "../../assets/background_almoxarifado.svg";
+import background_servicos from "../../assets/background_servicos.png";
 
 import {
   Container,

@@ -54,12 +54,25 @@ export const Formulario = styled.form`
   align-items: center;
   overflow-y: auto;
 
-  &::-webkit-scrollbar {
+  /*&::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: #016fb9;
-  }
+  }*/
 `;
+export const Label = styled.label`
+  /* font-family: Roboto; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: red;
+  cursor: pointer;
+`;
+

@@ -1,5 +1,5 @@
 import React from "react";
-import background_regionais from "../../assets/background_regionais.svg";
+import background_regionais from "../../assets/background_regionais.png";
 
 import {
   Container,

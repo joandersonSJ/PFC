@@ -1,5 +1,5 @@
 import React from "react";
-import background_link from "../../assets/background_link.svg";
+import background_tlink from "../../assets/background_tlink.png";
 
 import {
   Container,
@@ -10,10 +10,10 @@ import {
   Label,
 } from "./styles";
 
-export default function Link() {
+export default function TLink() {
   return (
     <Container>
-      <Image src={background_link} alt="background" />
+      <Image src={background_tlink} alt="background" />
       <FormularioContainer>
         <Formulario>
           <Label>Número do Contrato:</Label>
